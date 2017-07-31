@@ -9,11 +9,12 @@ function next() {
   }
 }
 
+i = 3
 function back() {
   document.getElementById("switch").src = pictures[i];
   i = i - 1;
-  if (i < -3) {
-    i = 0;
+  if (i < 0) {
+    i = 3;
   }
 
 }
